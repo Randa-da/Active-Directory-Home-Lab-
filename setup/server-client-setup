@@ -1,0 +1,21 @@
+# Windows server setup
+## 1. Create Virtual Machine
+-OS:Windows server 2022 
+-Adapters:
+  -NIC 1:Internal Network
+  -NIC 2:Nat(Internet Acess)
+
+## 2.Configure Network
+-Static IP:172.16.0.1
+-DNS: The server IP
+
+
+# Client (Windows 10)
+## 1. Create Virtual Machine
+-OS:Windows 10 
+-Adapters:
+  -NIC 1:Internal Network
+ 
+## 2.Configure Network
+- IP Address: Assigned via DHCP
+- DNS: 172.16.0.1 (Domain Controller)
