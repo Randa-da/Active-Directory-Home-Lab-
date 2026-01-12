@@ -1,3 +1,4 @@
+##wrote this script to add multiple users to the ActiveDirectory to the employees OU 
 Import-Module ActiveDirectory
 
 $users = @(
