@@ -27,6 +27,7 @@ Each document focuses on a specific service or configuration.
 
 ## Group Policy Objects (GPO)
 - [Password Policy GPO](setup/GPO-Password-Policy.md)
+  Password policies configured under Account Policies apply at the domain level
   
 ## Validation & Testing
 Configuration was validated using:
