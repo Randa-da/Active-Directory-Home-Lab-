@@ -9,3 +9,6 @@
 
 ## Purpose
 - Automate IP address assignment
+
+## Screenshot
+![...](../screenshots/dhcp-scope.png)
