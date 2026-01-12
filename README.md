@@ -5,6 +5,14 @@ an Active Directory Home Lab using Windows Server 2022 and Windows 10.
 
 Each document focuses on a specific service or configuration.
 
+## Lab Components
+- Windows Server 2022
+- Active Directory Domain Services (AD DS)
+- DHCP Server
+- NAT (RRAS)
+- Windows 10 Client
+- VirtualBox
+  
 ## Active Directory Setup
 - [Active Directory Domain Services (AD DS)](setup/ad-ds.md)  
   Installation and domain creation process.
