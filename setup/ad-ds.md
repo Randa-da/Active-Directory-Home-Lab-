@@ -15,3 +15,9 @@
 
 ## User Accounts 
 - A domain admin account was created and placed inside the appropriate OU
+
+  
+## Screenshots 
+![...](../screenshots/creating-domain.png)
+![...](../screenshots/add-user-ou.png)
+
