@@ -18,6 +18,6 @@
 
   
 ## Screenshots 
-![...](../screenshots/creating-domain.png)
-![...](../screenshots/add-user-ou.png)
+![creating domain](../screenshots/creating-domain.png)
+![Adding user to OU](../screenshots/add-user-ou.png)
 
