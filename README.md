@@ -26,7 +26,7 @@ Each document focuses on a specific service or configuration.
   PowerShell script used to automate domain user creation.
 
 ## Group Policy Objects (GPO)
-- [Password Policy GPO](setup/GPO-Password-Policy.md)
+- [Password Policy GPO](setup/gpo-password-policy.md)
   Password policies configured under Account Policies apply at the domain level
   
 ## Validation & Testing
