@@ -10,3 +10,6 @@
 
 ## Purpose
 - Allow domain clients to access external networks(Intenet)
+
+## Screenshot
+![...](../nat-rras.png)
