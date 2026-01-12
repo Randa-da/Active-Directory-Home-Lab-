@@ -1,0 +1,37 @@
+Import-Module ActiveDirectory
+
+$users = @(
+    @{First="Ahmad"; Last="Ali"},
+    @{First="Nora"; Last="Ali"},
+    @{First="Khalid"; Last="Nasser"},
+    @{First="Sara"; Last="Saleh"},
+    @{First="Bader"; Last="Mohammed"},
+    @{First="Lama"; Last="Abdullah"},
+    @{First="Najla"; Last="Yazan"},
+    @{First="Mohammed"; Last="Sami"},
+    @{First="Mona"; Last="Salem"},
+    @{First="Ahmad"; Last="Yazeed"}
+)
+
+$password = ConvertTo-SecureString "Machine-2!" -AsPlainText -Force
+
+foreach ($u in $users) {
+    $username = "$($u.First).$($u.Last)"
+    $upn = "$username@mydomain.com"
+
+    if (-not (Get-ADUser -Filter {SamAccountName -eq $username})) {
+        New-ADUser `
+            -Name $username `
+            -GivenName $u.First `
+            -Surname $u.Last `
+            -SamAccountName $username `
+            -UserPrincipalName $upn `
+           -AccountPassword $password `
+            -Enabled $true `
+            -ChangePasswordAtLogon $true `
+            -Path "OU=Employees,DC=mydomain,DC=com"
+    }
+    else {
+        Write-Host "User $username already exists"
+    }
+}
